@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code",
+  "author": "michal.klinovsky@gmail.com",
+  "version": "1.0.0",
+  "scripts": {
+    "create": "deno run --allow-net --allow-write ./scripts/create.ts",
+    "day": "deno run --allow-run ./scripts/run.ts"
+  },
+  "license": "ISC"
+}
