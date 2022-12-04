@@ -5,7 +5,7 @@ export const saveInput = async (day: string) => {
   const options = {
     headers: {
       'Content-Type': 'text/plain',
-      cookie: `session=${config.session}`,
+      cookie: `session=${Deno.env.get('ADVENT_OF_CODE_SESSION')}`,
     },
   };
   const response = await fetch(url, options);
