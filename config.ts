@@ -1,3 +1,3 @@
 export const config = {
-  year: '2022',
+  year: '2024',
 };
