@@ -9,14 +9,9 @@ function getSum(input: string) {
     const regex = /mul\((\d+),(\d+)\)/gm;
     const matches = [...input.matchAll(regex)];
 
-    const result = matches.map((match) => {
-        const a = parseInt(match[1]);
-        const b = parseInt(match[2]);
-
-        return a * b;
-    }).reduce((sum, item) => sum + item, 0);
-
-    return result;
+    return matches
+        .map((match) => parseInt(match[1]) * parseInt(match[2]))
+        .reduce((sum, item) => sum + item, 0);
 }
 
 console.log(getSum(dayInput));
