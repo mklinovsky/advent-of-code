@@ -1,4 +1,4 @@
-import { config } from "../config.ts";
+import { config } from '../config.ts';
 
 export const createDaySourceFile = async (day: string) => {
   const content = `// https://adventofcode.com/${config.year}/day/${day}
@@ -8,8 +8,8 @@ const dayInput = await loadInput(${day}) as string;
 
 /* part one **********************************************************/
 
-const result = dayInput.split('\\n').filter(Boolean);
-console.log(result);
+const input = dayInput.split('\\n').filter(Boolean);
+console.log(input);
 
 /* part two **********************************************************/
 `;
